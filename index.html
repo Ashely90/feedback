@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>口袋3.0内测问题反馈</title>
+  <meta name="viewport" id="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="lib/frozen.css">
+</head>
+<body>
+  <header class="ui-header ui-header-positive ui-border-b">
+    <h1>问题反馈</h1>
+ </header>
+  <div class="ui-form ui-border-t" style="margin-top:60px;">
+     <form>
+        <div class="ui-form-item ui-border-b">
+            <label>
+                联系人
+            </label>
+            <input type="text" placeholder="请输入联系人姓名" id="name">
+            <a href="#" class="ui-icon-close" name="name">
+            </a>
+        </div>
+        <div class="ui-form-item ui-border-b">
+            <label>
+                联系电话
+            </label>
+            <input type="text" placeholder="请输入联系电话" id="phone">
+            <a href="#" class="ui-icon-close" name="phone">
+            </a>
+        </div>
+        <div class="ui-form-item ui-border-b">
+            <label>
+                邮箱
+            </label>
+            <input type="text" placeholder="请输入联系邮箱" id="email">
+            <a href="#" class="ui-icon-close" name="email">
+            </a>
+        </div>
+        <div class="ui-form-item ui-border-b">
+            <label>问题类型</label>
+            <div class="ui-select">
+                <select id="type">
+                    <option>功能问题</option>
+                    <option>界面问题</option>
+                    <option>性能问题</option>
+                    <option>优化问题</option>
+                    <option>其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="ui-form-item ui-form-item-textarea ui-border-b">
+            <label>
+                问题描述
+            </label>
+            <textarea placeholder="请输入问题描述" id="description"></textarea>
+            <a href="#" class="ui-icon-close" name="description">
+            </a>
+        </div>
+     </form>
+     <div class="ui-btn-wrap">
+        <button class="ui-btn-lg ui-btn-primary" id="saveBtn">
+            提交
+        </button>
+    </div>
+  </div>
+  <div class="ui-tips ui-tips-warn" id="errTip" style="display:none;">
+    <i></i><span id="errText"></span>
+  </div>
+<script src="lib/zepto.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
